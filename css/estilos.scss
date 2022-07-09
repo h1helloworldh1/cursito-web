@@ -1,0 +1,306 @@
+// colores //
+$color1: white;
+$color2: #ae2c42;
+$color3: #343a40;
+// Nueva Paleta //
+$color4: #000000;
+$color5: #ff1472;
+$color6: #ff0066;
+$color7: #ab8f8f;
+
+html{
+    scroll-behavior: smooth;
+}
+// header-inicio //
+@mixin vars ($height, $width, $bcolor){
+    height: $height;
+    width: $width;
+    background-color: $bcolor;
+}
+header{
+    @include vars(40px, 100%, rgb(0,0,0) );
+        .social-media{
+                text-align: center;
+                padding: 4px;
+                a{
+                    padding: 5px;
+                    text-decoration: none;
+                    color:$color1;
+                    &:hover{
+                        text-decoration: none;
+                        color: $color2;
+                    }
+                }
+    }
+}
+// header-final //
+
+// NavBar-Inicio //
+.navbar-brand{
+        font-size: 32px;
+        font-family: lobster;
+        span{
+            color:$color2;
+        }
+    }
+// NavBar-Final //
+
+// Bienvenida-Inicia //
+.jumbotron{
+    background-image: url(../assets/img/carwash.jpg);
+    background-position: center;
+    background-size:cover;
+    color: $color1;
+    border-radius: 0%;
+    margin: 0%;
+    height: 400px;
+        h1{
+            font-size: 55px;
+            text-shadow: 2px 2px $color4;
+            animation-duration: 2s;
+            animation-name: aparecer;
+            animation-iteration-count: initial;
+    }
+        p{
+            font-size: 24px;
+            animation-duration: 2s;
+            animation-name: aparecer;
+            animation-iteration-count: initial;
+    }
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
+    }
+        a{
+            text-decoration: none;
+            color: $color1;
+    }
+}
+// Bienvenida-Final //
+
+// Migajas-Inicia //
+.breadcrumb{
+    a{
+        text-decoration: none;
+        color: $color4;
+        &:hover{
+            color: red;
+        }
+    }
+}
+// Migajas-Final //
+
+// google maps inicia //
+
+.googleMaps{
+    background-image: url(/assets/img/carwashing.jpg);
+    text-align: center;
+    padding: 12px;
+    .locationTitle{
+        background-color:$color2;
+        margin-bottom: 10px;
+        color: $color1;
+        padding: 10px;
+        text-align: center;
+        text-shadow: 2px 2px #000000;
+        border: 5px solid $color1;
+        font-family: lobster;
+    }
+    iframe{
+        border-radius:8px;
+        border-style: hidden;
+    }
+    .locationText{
+        color: $color1;
+    }
+}
+
+// google maps termina //
+
+// Contacto Inicia //
+.contactArea{
+    background-image: url(/assets/img/Griots.jpg);
+    padding: 10px;
+    .contactTitle{
+        @extend .brandsTitle;
+    }
+    #email{
+        margin-top: 10px;
+    }
+}
+
+// Contacto Final //
+
+// Brands Inicia //
+.brands{
+    background-image: url(/assets/img/carwashing.jpg);
+}
+.brandsTitle{
+    background-color:$color2;
+    margin: 0%;
+    color: $color1;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    border: 5px solid $color1;
+    font-family: lobster;
+}
+
+$brands: (
+    
+    red: #f55e5e,
+    gray: rgb(77, 77, 77),
+    black: $color3,
+
+    );
+
+@each $sizes, $colores in $brands {
+    .mp-#{$sizes} {
+        background-image: url(/assets/img/Griots.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+        border: 8px solid $colores;
+        text-align: center;
+        font-size: $sizes;
+        text-shadow:1px 1px #000000;
+        line-height: 200px;
+        color: $colores;
+        }
+}
+// Brands Final //
+
+// Nosotros-Inicia //
+.aboutUs{
+    padding: 12px;
+    background-image: url(/assets/img/carwashing.jpg);
+    background-position: center;
+    background-size: cover;
+    $estilo: (
+        colores: $color2,
+        centro: center,
+        tFuente: 40px,
+        reme: 1rem
+    );
+    .text{
+        text-shadow: 2px 2px #000000;
+        text-align: map-get($estilo, centro);
+        color: $color1;
+        background-color: map-get($estilo, colores);
+        padding: map-get($estilo, reme);
+        font-size: map-get($estilo, tFuente);
+        font-family: lobster;
+    }
+    .we{
+        background-color: $color2;
+        text-align: center;
+        color: $color1;
+        margin-bottom: 0%;
+        padding: map-get($estilo, reme);
+    }
+    .carPhoto{
+        height: 230px;
+        background-image: url(../assets/img/logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:45%;
+    }
+}
+// Nosotros-Final //
+
+// Servicios-Inicio //
+.productTitle{
+    background-color:$color2;
+    margin: 0%;
+    color: $color1;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    border: 5px solid $color1;
+    font-family: lobster;
+}
+.products{
+    height: auto;
+    padding: 16px;
+    background-color: $color3;
+    .col-sm-3{
+        padding: 10px;
+    }
+}
+// Servicios-Final //
+
+// Mapa inicio //
+.services{
+    background-color:$color2;
+    margin: 0%;
+    color: $color1;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    border: 5px solid $color1;
+    font-family: lobster;
+}
+$mapa: (
+    
+    1: $color2,
+    2: #f55e5e,
+    3: #c99393,
+    4: #fce1e1,
+
+    );
+
+@each $sizes, $colores in $mapa {
+    .maps-#{$sizes} {
+        background-image: url(/assets/img/Griots.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+        border: 12px solid $colores;
+        text-align: center;
+        font-size: $sizes;
+        text-shadow:1px 1px #000000;
+        line-height: 200px;
+        color: $colores;
+        }
+}
+@mixin vars ($height, $width, $bcolor){
+    height: $height;
+    width: $width;
+    background-color: $bcolor;
+}
+
+// Footer-Inicio //
+footer{
+    @include vars(100px, 100%, rgb(0,0,0));
+    text-align: center;
+    padding-top: 10px;
+        .footer{
+            h5{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: small;
+                color: $color1;
+            }
+            a{
+                text-decoration: none;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: small;
+                color: $color1;
+                &:hover{
+                    color:green
+                }
+            }
+            h6{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: small;
+                color: $color1;
+                padding-top: 9px;
+            }
+        }
+}
+// Footer-Final //

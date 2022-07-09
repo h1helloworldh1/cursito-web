@@ -1,0 +1,343 @@
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 40px;
+  width: 100%;
+  background-color: black;
+}
+
+header .social-media {
+  text-align: center;
+  padding: 4px;
+}
+
+header .social-media a {
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+header .social-media a:hover {
+  text-decoration: none;
+  color: #ae2c42;
+}
+
+.navbar-brand {
+  font-size: 32px;
+  font-family: lobster;
+}
+
+.navbar-brand span {
+  color: #ae2c42;
+}
+
+.jumbotron {
+  background-image: url(../assets/img/carwash.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  border-radius: 0%;
+  margin: 0%;
+  height: 400px;
+}
+
+.jumbotron h1 {
+  font-size: 55px;
+  text-shadow: 2px 2px #000000;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+
+.jumbotron p {
+  font-size: 24px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.jumbotron a {
+  text-decoration: none;
+  color: white;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.breadcrumb a:hover {
+  color: red;
+}
+
+.googleMaps {
+  background-image: url(/assets/img/carwashing.jpg);
+  text-align: center;
+  padding: 12px;
+}
+
+.googleMaps .locationTitle {
+  background-color: #ae2c42;
+  margin-bottom: 10px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+  border: 5px solid white;
+  font-family: lobster;
+}
+
+.googleMaps iframe {
+  border-radius: 8px;
+  border-style: hidden;
+}
+
+.googleMaps .locationText {
+  color: white;
+}
+
+.contactArea {
+  background-image: url(/assets/img/Griots.jpg);
+  padding: 10px;
+}
+
+.contactArea #email {
+  margin-top: 10px;
+}
+
+.brands {
+  background-image: url(/assets/img/carwashing.jpg);
+}
+
+.brandsTitle, .contactArea .contactTitle {
+  background-color: #ae2c42;
+  margin: 0%;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+  border: 5px solid white;
+  font-family: lobster;
+}
+
+.mp-red {
+  background-image: url(/assets/img/Griots.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  border: 8px solid #f55e5e;
+  text-align: center;
+  font-size: red;
+  text-shadow: 1px 1px #000000;
+  line-height: 200px;
+  color: #f55e5e;
+}
+
+.mp-gray {
+  background-image: url(/assets/img/Griots.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  border: 8px solid #4d4d4d;
+  text-align: center;
+  font-size: gray;
+  text-shadow: 1px 1px #000000;
+  line-height: 200px;
+  color: #4d4d4d;
+}
+
+.mp-black {
+  background-image: url(/assets/img/Griots.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  border: 8px solid #343a40;
+  text-align: center;
+  font-size: black;
+  text-shadow: 1px 1px #000000;
+  line-height: 200px;
+  color: #343a40;
+}
+
+.aboutUs {
+  padding: 12px;
+  background-image: url(/assets/img/carwashing.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.aboutUs .text {
+  text-shadow: 2px 2px #000000;
+  text-align: center;
+  color: white;
+  background-color: #ae2c42;
+  padding: 1rem;
+  font-size: 40px;
+  font-family: lobster;
+}
+
+.aboutUs .we {
+  background-color: #ae2c42;
+  text-align: center;
+  color: white;
+  margin-bottom: 0%;
+  padding: 1rem;
+}
+
+.aboutUs .carPhoto {
+  height: 230px;
+  background-image: url(../assets/img/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 45%;
+}
+
+.productTitle {
+  background-color: #ae2c42;
+  margin: 0%;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+  border: 5px solid white;
+  font-family: lobster;
+}
+
+.products {
+  height: auto;
+  padding: 16px;
+  background-color: #343a40;
+}
+
+.products .col-sm-3 {
+  padding: 10px;
+}
+
+.services {
+  background-color: #ae2c42;
+  margin: 0%;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+  border: 5px solid white;
+  font-family: lobster;
+}
+
+.maps-1 {
+  background-image: url(/assets/img/Griots.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  border: 12px solid #ae2c42;
+  text-align: center;
+  font-size: 1;
+  text-shadow: 1px 1px #000000;
+  line-height: 200px;
+  color: #ae2c42;
+}
+
+.maps-2 {
+  background-image: url(/assets/img/Griots.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  border: 12px solid #f55e5e;
+  text-align: center;
+  font-size: 2;
+  text-shadow: 1px 1px #000000;
+  line-height: 200px;
+  color: #f55e5e;
+}
+
+.maps-3 {
+  background-image: url(/assets/img/Griots.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  border: 12px solid #c99393;
+  text-align: center;
+  font-size: 3;
+  text-shadow: 1px 1px #000000;
+  line-height: 200px;
+  color: #c99393;
+}
+
+.maps-4 {
+  background-image: url(/assets/img/Griots.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  border: 12px solid #fce1e1;
+  text-align: center;
+  font-size: 4;
+  text-shadow: 1px 1px #000000;
+  line-height: 200px;
+  color: #fce1e1;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  padding-top: 10px;
+}
+
+footer .footer h5 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: small;
+  color: white;
+}
+
+footer .footer a {
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: small;
+  color: white;
+}
+
+footer .footer a:hover {
+  color: green;
+}
+
+footer .footer h6 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: small;
+  color: white;
+  padding-top: 9px;
+}
+/*# sourceMappingURL=estilos.css.map */
