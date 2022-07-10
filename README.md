@@ -1,2 +1,2 @@
 # cursito-web
-Web final del curso, las imagenes son mera mente ilustrativas.
+Web final del curso, las imagenes son meramente ilustrativas.
